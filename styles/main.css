@@ -54,3 +54,17 @@ body {
   background-color: #e0e0e0;
   color: inherit;
 }
+
+/*     NESTED DROPDOWN  POSTS SPAN  */
+#navbar ul li:hover ul li span {
+  float: right;
+  color: white;
+  background-color: coral;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+#navbar ul li:hover ul li:hover span {
+  background-color: chocolate;
+}
