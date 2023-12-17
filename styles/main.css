@@ -1,3 +1,7 @@
+:root {
+  --primary-color: coral;
+  --secondary-color: chocolate;
+}
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +33,7 @@ body {
 #navbar ul li:hover {
   cursor: pointer;
   color: white;
-  background-color: coral;
+  background-color: var(--primary-color);
 }
 #navbar ul li:hover a {
   color: white;
@@ -59,12 +63,29 @@ body {
 #navbar ul li:hover ul li span {
   float: right;
   color: white;
-  background-color: coral;
+  background-color: var(--primary-color);
   text-align: center;
   padding: 0.2rem 0.5rem;
   font-size: 0.8rem;
   border-radius: 5px;
 }
 #navbar ul li:hover ul li:hover span {
-  background-color: chocolate;
+  background-color: var(--secondary-color);
+}
+
+
+/* SHOWCASE */
+#showcase {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  background-color: var(--primary-color);
+}
+#showcase h1 {
+  color: white;
+  font-size: 4rem;
 }
